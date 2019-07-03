@@ -1,0 +1,66 @@
+{
+    "defaultSeverity": "error",
+    "extends": [
+        "tslint:recommended",
+        "tslint-eslint-rules"
+    ],
+    "exclude": [
+        "node_modules"
+    ],
+    "jsRules": {},
+    "rulesDirectory": [
+        "node_modules/tslint-eslint-rules/dist/rules"
+    ],
+    "rules": {
+        "semicolon": true,
+        "variable-name": false,
+        "object-literal-sort-keys": [
+            true,
+            "match-declaration-order",
+            "shorthand-first"
+        ],
+        "indent": [
+            true,
+            "spaces",
+            4
+        ],
+        "ter-indent": [
+            true,
+            4,
+            {
+                "SwitchCase": 1
+            }
+        ],
+        "quotemark": [
+            true,
+            "single",
+            "avoid-escape",
+            "avoid-template"
+        ],
+        "ter-padded-blocks": [
+            true,
+            {
+                "blocks": "always",
+                "classes": "always",
+                "switches": "never"
+            }
+        ],
+        "trailing-comma": [
+            true,
+            "never"
+        ],
+        "arrow-parens": [
+            true,
+            "ban-single-arg-parens"
+        ],
+        "object-curly-spacing": true,
+        "array-bracket-spacing": [
+            true,
+            "never"
+        ],
+        "member-access": [
+            true,
+            "no-public"
+        ]
+    }
+}
