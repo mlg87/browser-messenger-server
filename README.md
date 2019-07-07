@@ -21,4 +21,5 @@ the databse will set up tables upon the initial connection, so you don't need to
 * i chose pg (specifically [elephantsql](https://www.elephantsql.com/)) and [typorm](https://github.com/typeorm/typeorm) for the database bc its easy and free to setup (elephantsql) and typeorm is something ive been interested in using more
 * i initially tried to set this project up using [serverless](https://serverless.com/), however i hit an empasse when trying to establish socket connections for the chat rooms and decided to make a standard express server instead
 * a different auth strategy, or just keeping a collection of logged out JWTs, is something i'd like to do next, but JWTs are relatively fast to setup so i chose that
+* the project is hosted on heroku for free, so there's a good chance it's asleep
 * tests definitely need to be added
