@@ -11,10 +11,13 @@ router.get('/', passport.authenticate('jwt', { session: false }), async (req, re
 
         const userRepo = getRepository(User);
         const [users, count] = await userRepo.findAndCount({
+            order: {
+                username: 'ASC'
+            },
+            select: ['id', 'isOnline', 'username'],
             where: {
                 id: Not(Equal(req.user.id))
-            },
-            select: ['id', 'isOnline', 'username']
+            }
         });
 
         return res.json({

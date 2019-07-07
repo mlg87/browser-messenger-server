@@ -79,10 +79,13 @@ router.get('/:id/messages', passport.authenticate('jwt', { session: false }), as
 
         const messageRepo = getRepository(Message);
         const messages = await messageRepo.find({
+            order: {
+                createdAt: 'ASC'
+            },
+            relations: ['from', 'to'],
             where: [
                 { conversation: id }
             ],
-            relations: ['from', 'to']
         });
 
         return res.json({
