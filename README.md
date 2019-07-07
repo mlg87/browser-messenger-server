@@ -1,5 +1,7 @@
 # browser-messenger server
-move over slack. there's a new messenging service in town. find the live version at messenger.masoncod.es
+move over slack. there's a new messenging service in town. find the live version at [messenger.masoncod.es](https://messenger.masoncod.es)
+
+this is backend support for [browser-messenger client](https://github.com/mlg87/browser-messenger-client)
 
 ## running locally
 the most important piece to running the server locally is correctly setting up the `.env` file (that needs to be placed at the root). after creating the `.env` file, paste the folling and assign the appropriate values for each:
